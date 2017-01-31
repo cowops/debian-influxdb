@@ -16,3 +16,8 @@
 - name: copy influxdb conf
   template: src=config.toml.j2 dest=/opt/influxdb/shared/config.toml
   notify: restart influxdb
+
+- systemd:
+    name: influxdb
+    enabled: yes
+    masked: no

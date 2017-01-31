@@ -34,7 +34,7 @@ Example Playbook
 Tasks
 -----
 
-  - Install [InfluxDB](http://influxdb.com/)
+  - Install [InfluxDB](https://www.influxdata.com/time-series-platform/influxdb/)
 
 License
 -------
