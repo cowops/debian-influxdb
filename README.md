@@ -27,7 +27,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: loranger.debian-influxdb, influxdb.version: 1.2.0, influxdb.port.admin: 8083, influxdb.port.api: 8086 }
+         - { role: cowops.debian-influxdb, influxdb.version: 1.2.0, influxdb.port.admin: 8083, influxdb.port.api: 8086 }
 
 Tasks
 -----
