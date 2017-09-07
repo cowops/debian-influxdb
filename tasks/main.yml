@@ -17,7 +17,8 @@
   template: src=influxdb.conf.j2 dest=/etc/influxdb/influxdb.conf
   notify: restart influxdb
 
-- systemd:
-    name: enable influxdb on boot
+- name: enable influxdb on boot
+  systemd:
+    name: influxdb
     enabled: yes
     masked: no
