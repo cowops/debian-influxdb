@@ -12,7 +12,7 @@ Role Variables
 --------------
 
 influxdb:
-  version: 1.2.0
+  version: 1.3.5
   port:
     admin: 8083
     api: 8086
@@ -27,7 +27,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: cowops.debian-influxdb, influxdb.version: 1.2.0, influxdb.port.admin: 8083, influxdb.port.api: 8086 }
+         - { role: cowops.debian-influxdb, influxdb.version: 1.3.5, influxdb.port.admin: 8083, influxdb.port.api: 8086 }
 
 Tasks
 -----
