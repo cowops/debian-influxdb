@@ -9,7 +9,8 @@
   when: not influxdb_binary.stat.exists
 
 - name: install influxdb packages
-  apt: deb=/tmp/influxdb.deb
+  apt:
+    deb: /tmp/influxdb.deb
   when: not influxdb_binary.stat.exists
   notify: start influxdb
 
